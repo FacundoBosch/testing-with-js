@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(58, 58, 58);
+  padding: 1.5em;
+}
+.options .op1, .options .op2, .options .op3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50em;
+  margin: 1.5em;
+  padding: 1.5em;
+  box-shadow: 0 0 0.7em rgb(36, 36, 36);
+  border-radius: 7px;
+  transition: all 0.1s ease-in-out;
+}
+.options .op1 img, .options .op2 img, .options .op3 img {
+  width: 80%;
+  z-index: 3;
+}
+.options .op1:hover, .options .op2:hover, .options .op3:hover {
+  cursor: pointer;
+  background-color: rgb(36, 36, 36);
+}
+.options .op1 #cover, .options .op2 #cover, .options .op3 #cover {
+  z-index: 2;
+  position: absolute;
+  background-color: rgb(36, 36, 36);
+}
+.options .op1 #cover:hover, .options .op2 #cover:hover, .options .op3 #cover:hover {
+  cursor: wait;
+}/*# sourceMappingURL=style.css.map */
